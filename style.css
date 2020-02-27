@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aquiles__plugin{
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.aquiles__slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    padding: 0;
+    transition: all 0.3s;
+}
+.aquiles__plugin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aquiles__prev, .aquiles__next {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid lightseagreen;
+    border-left: 5px solid lightseagreen;
+    top: 45%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.aquiles__prev:hover, .aquiles__next:hover{
+    border-top: 5px solid #2cd9d0;
+    border-left: 5px solid #2cd9d0;
+}
+
+.aquiles__prev {
+    left: 15px;
+    transform: rotate(-45deg);
+}
+
+.aquiles__next {
+    right: 15px;
+    transform: rotate(140deg);
+}
+
+.aquiles__item {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.aquiles__dots {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 45%; 
+}
+
+.aquiles__dot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
